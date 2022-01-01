@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus } from "@nestjs/common";
-import { ErrorCode } from "src/global/common/errorCode";
+import { ErrorCode } from "@root/global/common/errorCode";
 
 export class NotFoundMusicianException extends HttpException {
 	constructor() {

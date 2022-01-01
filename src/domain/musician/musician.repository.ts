@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { Neo4jService } from "src/neo4j/neo4j.service";
+import { Neo4jService } from "@root/neo4j/neo4j.service";
 import { RequestMusician } from "./dto/RequestMusician.dto";
 
 @Injectable()

@@ -8,10 +8,10 @@ import {
 	ClassSerializerInterceptor,
 	UseInterceptors
 } from "@nestjs/common";
-import { RequestAlbum } from "./dto/RequestAlbum.dto";
+import { SuccessCode } from "@root/global/common/successCode";
+import { SuccessResponse } from "@root/global/common/successResponse";
 import { AlbumService } from "./album.service";
-import { SuccessResponse } from "src/global/common/successResponse";
-import { SuccessCode } from "src/global/common/successCode";
+import { RequestAlbum } from "./dto/RequestAlbum.dto";
 import { UpdateAlbum } from "./dto/UpdateAlbum.dto";
 
 @UseInterceptors(ClassSerializerInterceptor)

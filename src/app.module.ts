@@ -1,12 +1,12 @@
 import { Module } from "@nestjs/common";
-import { Neo4jModule } from "./neo4j/neo4j.module";
 import { ConfigModule } from "@nestjs/config";
-import { SongModule } from "./domain/song/song.module";
+import { GraphQLModule } from "@nestjs/graphql";
 import { AlbumModule } from "./domain/album/album.module";
 import { MusicianModule } from "./domain/musician/musician.module";
-import { RelationModule } from "./domain/relation/relation.module";
-import { GraphQLModule } from "@nestjs/graphql";
 import { ReadModule } from "./domain/read/read.module";
+import { RelationModule } from "./domain/relation/relation.module";
+import { SongModule } from "./domain/song/song.module";
+import { Neo4jModule } from "./neo4j/neo4j.module";
 
 @Module({
 	imports: [

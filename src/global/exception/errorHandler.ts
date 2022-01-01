@@ -4,10 +4,10 @@ import {
 	Catch,
 	ExceptionFilter
 } from "@nestjs/common";
-import { NotFoundAlbumException } from "src/domain/album/exception/NotFoundAlbumException";
-import { NotFoundMusicianException } from "src/domain/musician/exception/NotFoundMusicianException";
-import { NotFoundRelationException } from "src/domain/relation/exception/NotFoundRelationException";
-import { NotFoundSongException } from "src/domain/song/exception/NotFoundSongException";
+import { NotFoundAlbumException } from "@root/domain/album/exception/NotFoundAlbumException";
+import { NotFoundMusicianException } from "@root/domain/musician/exception/NotFoundMusicianException";
+import { NotFoundRelationException } from "@root/domain/relation/exception/NotFoundRelationException";
+import { NotFoundSongException } from "@root/domain/song/exception/NotFoundSongException";
 import { ErrorCode } from "../common/errorCode";
 import { ErrorResponse } from "../common/ErrorResponse";
 

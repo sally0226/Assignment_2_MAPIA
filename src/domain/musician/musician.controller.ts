@@ -8,11 +8,11 @@ import {
 	Post,
 	UseInterceptors
 } from "@nestjs/common";
-import { MusicianService } from "./musician.service";
+import { SuccessCode } from "@root/global/common/successCode";
+import { SuccessResponse } from "@root/global/common/successResponse";
 import { RequestMusician } from "./dto/RequestMusician.dto";
-import { SuccessCode } from "src/global/common/successCode";
-import { SuccessResponse } from "src/global/common/successResponse";
 import { UpdateMusician } from "./dto/UpdateMusician.dto";
+import { MusicianService } from "./musician.service";
 
 @UseInterceptors(ClassSerializerInterceptor)
 @Controller("musicians")
